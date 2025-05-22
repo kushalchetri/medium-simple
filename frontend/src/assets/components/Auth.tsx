@@ -22,7 +22,7 @@ export function Auth({type}:{type: "signup"|"signin"}){
             if(type=="signin"){
                 return alert("eror while loggin in")
             }else{
-                return alert("error while creating user")
+                return alert("enter valid email")
             } 
         }
         
