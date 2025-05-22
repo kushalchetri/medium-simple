@@ -16,11 +16,11 @@ export const Publish = ()=>{
             <div className="flex flex-col"> 
                 <textarea onChange={(e)=>{
                     setTitle(e.target.value)
-                }} className="block h-6 w-sm text-sm text-gray-900 bg-gray-50 rounded-sm border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Title"></textarea>
+                }} className="block h-6 w-xs text-sm text-gray-900 bg-gray-50 rounded-sm border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Title"></textarea>
                 <textarea onChange={(e)=>{
                     setContent(e.target.value)
-                }} className="block mt-1 h-40 w-sm text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Write an artical"></textarea>
-                <div className="w-sm border border-gray-300 h-7 rounded-md">
+                }} className="block mt-1 h-40 w-xs text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Write an artical"></textarea>
+                <div className="w-xs border border-gray-300 h-7 rounded-md">
                 <button onClick={async()=>{
                     const res = await axios.post(`${BACKEND_URL}/api/v1/blog`,{
                         title,
