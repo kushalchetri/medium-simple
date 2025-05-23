@@ -16,7 +16,7 @@ export const BlogCard = ({
     publishedDate
 }:BlogCardProps)=>{
     return <div className="flex justify-center">
-    <div className="flex flex-col items-start h-42 scale-y-56 scale-x-60 m-[-38px] w-120 p-4 border-solid border-b border-b-gray-300">
+    <div className="flex flex-col items-start h-45 scale-y-70 scale-x-72 m-[-32px] w-120 p-4 border-solid border-b border-b-gray-300">
         <Link to={`/blog/${id}`}>
         <div className="flex flex-row">
             <Avatar name={authorName} size="small" /> {authorName} <CircleDot/>
